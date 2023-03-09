@@ -18,13 +18,11 @@ export default function SearchBar() {
 
   }
 
-  const [error, setError] = useState('');
 
   const onSearchSubreddit = (e) => {
     e.preventDefault();
     const searchTerm = e.target[0].value;
     dispatch(loadPostBySubreddit(searchTerm)).then((response) => {
-      setError('')
       if (response.error) {
         alert('Subreddit Not Found');
       }

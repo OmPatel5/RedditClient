@@ -1,7 +1,7 @@
 .post { 
     display: flex;
-    min-width: 500px;
-    max-width: 1000px;
+    min-width: 25%;
+    max-width: 45%;
     /* min-height: 300px; */
     /* border: 1px solid blue;  */
 
@@ -18,15 +18,16 @@
 
 
 .post-img {
-    max-width: 500px;
-    min-width: 500px;
+    border: 1px solid blue;
+    max-width: 90%;
+    min-width: 90%;
     border-radius: 10px;
     margin-left: 50px;
     margin-right: 50px;
 }
 
 .upvotes {
-    width: 100px;
+    width: 10%;;
     max-height: 800px;
     /* border: 1px solid purple; */
     text-align: center;
@@ -78,7 +79,8 @@
 }
 
 .post-title {
-    width: 800px;
+    width: 100%;
+    font-size: 1.5rem;
     margin-right: 30px;
     color: rgb(105, 105, 105);
 }
@@ -102,3 +104,37 @@
 }
 
 
+.post-line {
+    width: 100%;
+}
+
+.post-info {
+    /* border: 1px solid blue; */
+    width: 83%;
+}
+
+
+@media screen and (max-width: 1600px) {
+    .post {
+        /* border: 1px solid rgb(98, 0, 255); */
+        max-width: 60%; /* The width is 100%, when the viewport is 800px or smaller */
+        min-width: 60%;
+    }
+
+    .post-img {
+        margin-left: 0px;
+    }
+  } 
+
+
+  @media screen and (max-width: 800px) {
+    .post {
+        /* border: 1px solid red; */
+        max-width: 80%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+
+    .post-img {
+        margin-left: 0px;
+
+    }
+  } 

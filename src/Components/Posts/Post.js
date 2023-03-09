@@ -16,9 +16,9 @@ export default function Post({post}) {
     return (
         <div className="post">
             <div className='upvotes'>
-                    <FontAwesomeIcon icon={faArrowUp} className="fa-2x upvote-arrow up-arrow"/>
-                    <h3 className='num-upvotes'>{post.upvotes}</h3>
-                    <FontAwesomeIcon icon={faArrowDown} className="fa-2x upvote-arrow"/>
+                <FontAwesomeIcon icon={faArrowUp} className="fa-2x upvote-arrow up-arrow"/>
+                <h3 className='num-upvotes'>{post.upvotes}</h3>
+                <FontAwesomeIcon icon={faArrowDown} className="fa-2x upvote-arrow"/>
             </div>
             <div className='post-info'>
                 <h1 className='post-title'>{post.title}</h1>
