@@ -5,7 +5,10 @@
     /* min-height: 300px; */
     /* border: 1px solid blue;  */
 
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(0, 145, 255);
+    border-radius: 5px;
+
+    box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.2);
     margin-bottom: 100px;
     flex-wrap: wrap;
 
