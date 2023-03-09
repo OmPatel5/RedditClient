@@ -8,11 +8,9 @@ export const loadPosts = createAsyncThunk(
     async () => {
         let posts = [];
 
-        let commentsUrl = [];
-
         await Axios.get("https://www.reddit.com/r/popular.json").then((response) => {
             
-            const allPosts = Object.keys(response.data.data.children).map((post) => {
+            Object.keys(response.data.data.children).forEach((post) => {
                 const time = response.data.data.children[post].data.created_utc;
                 const date =moment.unix(time).fromNow();
 
@@ -28,6 +26,7 @@ export const loadPosts = createAsyncThunk(
                     commentsUrl: url,
                     media: response.data.data.children[post].data.url && response.data.data.children[post].data.url,
                 })
+
             })
         })
         
@@ -40,7 +39,7 @@ export const loadPostBySubreddit = createAsyncThunk(
     async (subreddit) => {
         const posts = [];
         await Axios.get(`https://www.reddit.com/${subreddit}.json`).then((response) => {
-            Object.keys(response.data.data.children).map((post) => {
+            Object.keys(response.data.data.children).forEach((post) => {
                 const time = response.data.data.children[post].data.created_utc;
                 const date =moment.unix(time).fromNow();
 
@@ -68,7 +67,7 @@ export const loadCommentsForPost = async (commentUrl) => {
     let comments = [];
 
     await Axios.get(commentUrl).then((response) => {
-        Object.keys(response.data[1].data.children).map((comment) => {
+        Object.keys(response.data[1].data.children).forEach((comment) => {
 
             const commentObj = {
                 comment: response.data[1].data.children[comment].data.body,
@@ -109,7 +108,7 @@ export const getPostBySearch = createAsyncThunk(
     async (searchTerm) => {
         let searchTermPosts = [];
         await Axios.get(`https://www.reddit.com/search.json?q=${searchTerm}`).then((response) => {
-            Object.keys(response.data.data.children).map((post) => {
+            Object.keys(response.data.data.children).forEach((post) => {
                 const time = response.data.data.children[post].data.created_utc;
                 const date =moment.unix(time).fromNow();
 

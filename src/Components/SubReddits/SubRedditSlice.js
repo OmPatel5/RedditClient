@@ -10,7 +10,7 @@ export const loadSubreddits = createAsyncThunk(
 
         await Axios.get("https://www.reddit.com/subreddits.json").then((response) => {
             // response.data.data.children
-            const allSubreddits = Object.keys(response.data.data.children).map((subreddit) => {
+            Object.keys(response.data.data.children).forEach((subreddit) => {
                 // console.log(response.data.data.children[subreddit].data)
                 subreddits.push({
                     title: response.data.data.children[subreddit].data.title,

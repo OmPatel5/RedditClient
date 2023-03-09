@@ -15,7 +15,7 @@ export default function Posts() {
         dispatch(loadPosts()).then((response) =>{
             setIsLoading(false);
         });
-    }, [])
+    }, [dispatch])
 
     const posts = useSelector(selectPosts);
 

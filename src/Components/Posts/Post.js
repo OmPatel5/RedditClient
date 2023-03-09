@@ -23,7 +23,7 @@ export default function Post({post}) {
             <div className='post-info'>
                 <h1 className='post-title'>{post.title}</h1>
 
-                {post.media && <img className="post-img" src={post.media} alt=""/>}
+                {post.media && <img className="post-img" src={post.media} alt="post image"/>}
 
                 <hr className='post-line'/> 
 
@@ -31,7 +31,7 @@ export default function Post({post}) {
                     <p className='postedby'>Posted By: <span className='post-name'>{post.postedBy}</span></p>
                     <p className='postedDate'>{post.date}</p>
 
-                    <p className='comment-amt'><button className='comments-button' onClick={() => showComments ? setShowComments(false) : setShowComments(true)}><img className="comment-icon" src='https://www.freeiconspng.com/thumbs/comment-png/comment-png-1.png' /></button>{post.numComments}</p>
+                    <p className='comment-amt'><button className='comments-button' onClick={() => showComments ? setShowComments(false) : setShowComments(true)}><img className="comment-icon" src='https://www.freeiconspng.com/thumbs/comment-png/comment-png-1.png' alt="comment button"/></button>{post.numComments}</p>
                 </div>
             </div>
 

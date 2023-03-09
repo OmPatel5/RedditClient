@@ -17,7 +17,7 @@ export default function SubReddits() {
 
     useEffect(() => {
         dispatch(loadSubreddits());
-    }, [])
+    }, [dispatch])
 
     const subreddits = useSelector(selectSubreddits);
     const isLoading = useSelector(selectIsLoading);

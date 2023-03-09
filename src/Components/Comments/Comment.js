@@ -14,7 +14,7 @@ export default function Comment({comment}) {
         loadProfilePics(comment).then((response) => {
             setProfilePic(response);
         })
-    }, []);
+    }, [comment]);
 
     
 
