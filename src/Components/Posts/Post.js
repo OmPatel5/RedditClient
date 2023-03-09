@@ -23,7 +23,7 @@ export default function Post({post}) {
             <div className='post-info'>
                 <h1 className='post-title'>{post.title}</h1>
 
-                {post.media && <img className="post-img" src={post.media} alt="post image"/>}
+                {post.media && <img className="post-img" src={post.media} alt="post"/>}
 
                 <hr className='post-line'/> 
 
