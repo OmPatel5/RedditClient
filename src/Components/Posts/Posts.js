@@ -9,16 +9,24 @@ export default function Posts() {
     const dispatch = useDispatch();
 
     const [isLoading, setIsLoading] = useState(false);
+    const [done, setDone] = useState(false);
 
     useEffect(() => {
+        setDone(false);
         setIsLoading(true)
         dispatch(loadPosts()).then((response) =>{
             setIsLoading(false);
+            setDone(true)
         });
     }, [dispatch])
 
     const posts = useSelector(selectPosts);
 
+    if (done === true && posts.length === 0) {
+        return (
+            <h1>No Posts Yet!</h1>
+        )
+    }
     
 
 

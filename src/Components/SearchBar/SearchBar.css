@@ -15,8 +15,18 @@
     background-size: 30px;
 
     font-size: 20px;
-    position: absolute;
-    right: 0;
 }
 
+.search-bars-container {
+    display: flex;
+    position: absolute;
+    right: 0;
+    /* position: absolute;
+    right: 0; */
+    margin-right: 20px;
+}
+
+.search-subreddits {
+    margin-right: 20px;
+}
 
