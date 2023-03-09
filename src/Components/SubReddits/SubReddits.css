@@ -1,0 +1,93 @@
+.subreddit-container {
+    display: inline-flex;
+}
+
+.subreddit {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(89, 182, 244);
+    color: white;
+    min-width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* .subreddit:hover {
+    background-color: rgb(112, 192, 246);
+
+} */
+
+.active-subreddit {
+    background-color: blueviolet;
+}
+
+
+#loading {
+    pointer-events: none;
+}
+
+.subreddit-wrapper {
+    /* border: 1px solid blue; */
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+
+    justify-content: center;
+}
+
+.subreddit-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.btn-scroll {
+    background-color:transparent;
+    border: none;
+
+}
+
+.btn-scroll {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 185, 247);
+    border-radius: 20px;
+    
+}
+
+#btn-scroll-right {
+    position: absolute;
+    top:105px;
+    right:2px;
+    cursor: pointer;
+    color: rgb(0, 174, 255)
+
+}
+
+#btn-scroll-left {
+    position: absolute;
+    top:105px;
+    cursor: pointer;
+    color: rgb(0, 174, 255)
+
+}
+
+.subreddit-title {
+    white-space: nowrap;
+
+}
+
+.subreddit-title:hover {
+    text-decoration: underline;
+
+}
+
+
+.subreddit-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+
+    border-radius: 50px;
+}

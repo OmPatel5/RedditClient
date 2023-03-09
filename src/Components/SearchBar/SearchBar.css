@@ -1,0 +1,22 @@
+.searchBar {
+    display: inline-flex;
+    align-items: center;
+    
+}
+
+.search-input {
+    height: 40px;
+    border-radius: 48px;
+    border: 0.5px solid lightgrey;
+    width: 500px;
+    padding-right: 40px;
+    padding-left: 10px;
+    background: url("https://cdn-icons-png.flaticon.com/512/6438/6438882.png") no-repeat right;
+    background-size: 30px;
+
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+}
+
+

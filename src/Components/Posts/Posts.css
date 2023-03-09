@@ -1,0 +1,101 @@
+.post { 
+    display: flex;
+    min-width: 500px;
+    max-width: 1000px;
+    /* min-height: 300px; */
+    /* border: 1px solid blue;  */
+
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+
+
+}
+
+
+
+.post-img {
+    max-width: 500px;
+    min-width: 500px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.upvotes {
+    width: 100px;
+    max-height: 800px;
+    /* border: 1px solid purple; */
+    text-align: center;
+
+    margin-right: 20px;
+    
+}
+
+.num-upvotes {
+    margin: 0;
+    color: rgb(0, 166, 255)
+}
+
+.upvote-arrow {
+    color: rgb(148, 148, 148);
+}
+
+.up-arrow {
+    margin-top: 20px;
+}
+
+.extra-info {
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.comment-icon {
+    width: 20px;
+}
+
+.postedby {
+    font-size: 16px;
+    color: rgb(173, 173, 173);
+}
+
+.postedDate {
+    font-size: 16px;
+    color: rgb(173, 173, 173);
+}
+
+.comment-amt {
+    font-size: 16px;
+    color: rgb(173, 173, 173);
+}
+
+.post-name {
+    color: rgb(64, 124, 255);
+}
+
+.post-title {
+    width: 800px;
+    margin-right: 30px;
+    color: rgb(105, 105, 105);
+}
+
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.comments-button {
+    background-color: transparent;
+    border: none;
+}
+
+.comments {
+    min-width: 1000px;
+    margin-top: 0;
+    
+}
+
+
