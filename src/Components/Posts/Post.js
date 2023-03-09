@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import "./Posts.css"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faArrowUp, faArrowDown, faComment } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Comments from '../Comments/Comments';
-import Iframe from 'react-iframe'
 
 
 

@@ -5,7 +5,7 @@ import './CommentsSkeleton.css'
 
 export default function CommentsSkeleton({comments}) {
   return (
-    Array(comments).fill(0).map((item, index) => (
+    Array(comments).fill(0).map((_, index) => (
         <div className='comments-skeleton' key={index}>
             <div className='commentInfo'>
                 <div className='pfp'>

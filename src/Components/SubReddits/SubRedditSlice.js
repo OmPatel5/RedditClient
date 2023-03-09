@@ -5,7 +5,6 @@ import Axios from 'axios';
 export const loadSubreddits = createAsyncThunk(
     "subreddits/getAllSubreddits",
     async () => {
-        // endpoint is https://www.reddit.com/subreddits.json
 
         let subreddits = [];
 

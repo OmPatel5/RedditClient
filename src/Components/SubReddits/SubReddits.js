@@ -1,13 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react'
 import "./SubReddits.css"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-// import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+
 
 import {useDispatch, useSelector} from "react-redux";
 import { loadSubreddits, selectSubreddits } from './SubRedditSlice';
-import { getPostBySubreddit, loadPostBySubreddit, selectIsLoading } from '../Posts/PostsSlice';
-import Skeleton from 'react-loading-skeleton';
+import { loadPostBySubreddit, selectIsLoading } from '../Posts/PostsSlice';
 
 
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';

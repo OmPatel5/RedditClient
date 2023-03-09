@@ -1,11 +1,8 @@
 // import Axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { useSelector } from 'react-redux';
-// import { useDispatch, useSelector } from 'react-redux';
-import { loadCommentsForPost, selectIsLoading } from '../Posts/PostsSlice.js';
+import { loadCommentsForPost} from '../Posts/PostsSlice.js';
 import Comment from './Comment.js';
 import "./Comments.css"
-import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 import CommentsSkeleton from './CommentsSkeleton.js';
 

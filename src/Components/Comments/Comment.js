@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { loadProfilePics, selectIsLoading } from '../Posts/PostsSlice';
+import { loadProfilePics} from '../Posts/PostsSlice';
 import moment from 'moment';
-import { isAllOf } from '@reduxjs/toolkit';
 
 
 
@@ -10,14 +8,11 @@ import { isAllOf } from '@reduxjs/toolkit';
 
 export default function Comment({comment}) {
     const [profilePic, setProfilePic] = useState('');
-    const [isLoading, setIsLoading] = useState(false);
     
 
     useEffect(() => {
-        setIsLoading(true);
         loadProfilePics(comment).then((response) => {
             setProfilePic(response);
-            setIsLoading(false);
         })
     }, []);
 
