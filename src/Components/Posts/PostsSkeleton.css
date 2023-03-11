@@ -30,3 +30,31 @@
     margin-left: 20px;
     margin-right: 20px;
 }
+
+
+@media screen and (max-width: 1600px) {
+    .posts-skeleton {
+        /* border: 1px solid rgb(98, 0, 255); */
+        max-width: 60%; /* The width is 100%, when the viewport is 800px or smaller */
+        min-width: 60%;
+    }
+
+  } 
+
+  @media screen and (max-width: 800px) {
+    .posts-skeleton {
+        max-width: 80%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+
+    
+  } 
+  
+
+  @media screen and (max-width: 600px) {
+    .posts-skeleton {
+        max-width: 95%; /* The width is 100%, when the viewport is 800px or smaller */
+        min-width: 85%;
+    }
+
+
+  } 

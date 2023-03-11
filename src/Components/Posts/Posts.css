@@ -1,6 +1,6 @@
 .post { 
     display: flex;
-    min-width: 25%;
+    min-width: 35%;
     max-width: 45%;
     /* min-height: 300px; */
     /* border: 1px solid blue;  */
@@ -18,9 +18,7 @@
 
 
 .post-img {
-    border: 1px solid blue;
-    max-width: 90%;
-    min-width: 90%;
+    width: 65%;
     border-radius: 10px;
     margin-left: 50px;
     margin-right: 50px;
@@ -80,7 +78,6 @@
 
 .post-title {
     width: 100%;
-    font-size: 1.5rem;
     margin-right: 30px;
     color: rgb(105, 105, 105);
 }
@@ -98,10 +95,15 @@
 }
 
 .comments {
-    min-width: 1000px;
+    width: 100%;
     margin-top: 0;
     
 }
+
+
+.comments::-webkit-scrollbar {
+    display: none;
+  }
 
 
 .post-line {
@@ -124,10 +126,14 @@
     .post-img {
         margin-left: 0px;
     }
+
+    .post-title {
+        font-size: 1.5rem;
+    }
   } 
 
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1200px) {
     .post {
         /* border: 1px solid red; */
         max-width: 80%; /* The width is 100%, when the viewport is 800px or smaller */
@@ -136,5 +142,45 @@
     .post-img {
         margin-left: 0px;
 
+    }
+  } 
+  
+
+  @media screen and (max-width: 600px) {
+    .post {
+        max-width: 95%; /* The width is 100%, when the viewport is 800px or smaller */
+        min-width: 85%;
+    }
+
+  
+
+    .post-img {
+        margin-left: 0px;
+
+    }
+
+    .postedby {
+        font-size: 13px;
+        color: rgb(173, 173, 173);
+    }
+    
+    .postedDate {
+        font-size: 13px;
+        color: rgb(173, 173, 173);
+    }
+    
+    .comment-amt {
+        font-size: 13px;
+        color: rgb(173, 173, 173);
+    }
+    
+    .post-name {
+        font-size: 13px;
+        color: rgb(64, 124, 255);
+    }
+
+    .comments-button {
+        background-color: transparent;
+        border: none;
     }
   } 

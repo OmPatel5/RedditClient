@@ -32,3 +32,29 @@
     margin-left: 50px;
 }
 
+@media screen and (max-width: 900px) {
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 130px;
+        align-items: normal;
+    }
+
+    .logo-name {
+        display: inline-flex;
+        align-items: normal;
+        margin: 0;
+        height: 80px;
+    
+        color: rgb(113, 113, 113);
+    }
+    
+
+    .reddit-logo {
+        margin: 0;
+        margin-bottom: 50px;
+        margin-right: 10px;
+    }
+  } 
+

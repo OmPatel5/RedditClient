@@ -1,7 +1,6 @@
 .searchBar {
     display: inline-flex;
     align-items: center;
-    
 }
 
 .search-input {
@@ -30,3 +29,27 @@
     margin-right: 20px;
 }
 
+@media screen and (max-width: 1600px) {
+    .search-input {
+        width: 90%;
+    }
+  } 
+
+  @media screen and (max-width: 1200px) {
+    .search-input {
+        width: 80%;
+    }
+  } 
+
+@media screen and (max-width: 600px) {
+    .searchBar {
+        display: block;
+        margin-top: 45px;
+        text-align: center;
+        /* align-items: center; */
+        
+    }
+    .search-input {
+        width: 50%;
+    }
+  } 
