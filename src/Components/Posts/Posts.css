@@ -31,11 +31,13 @@
     text-align: center;
 
     margin-right: 20px;
+    margin-left: 10px;
     
 }
 
 .num-upvotes {
     margin: 0;
+    font-size: 1rem;
     color: rgb(0, 166, 255)
 }
 

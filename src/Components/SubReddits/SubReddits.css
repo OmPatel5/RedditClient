@@ -6,7 +6,7 @@
     border: 1px solid rgb(255, 255, 255);
     background-color: rgb(89, 182, 244);
     color: white;
-    min-width: 1%;
+    min-width: 200px;
     height: 50px;
     border-radius: 30px;
     
@@ -58,7 +58,8 @@
 
 #btn-scroll-right {
     position: absolute;
-    top:155px;
+    top:107px;
+
     right:2px;
     cursor: pointer;
     color: rgb(0, 174, 255)
@@ -67,7 +68,7 @@
 
 #btn-scroll-left {
     position: absolute;
-    top:155px;
+    top:107px;
     cursor: pointer;
     color: rgb(0, 174, 255)
 
@@ -93,16 +94,31 @@
     border-radius: 50px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .subreddit-title {
         margin-right: 20px;
         font-size: 1rem;
     
     }
 
+    .subreddit {
+        min-width: 100px;
+        height: 40px
+    }
+
     .subreddit-icon {
         width: 40px;
 
         height: 40px;
+    }
+
+    #btn-scroll-right {
+        top:155px;
+        
+    
+    }
+    
+    #btn-scroll-left {
+        top:155px;
     }
   } 

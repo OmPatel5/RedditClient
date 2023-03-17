@@ -41,15 +41,31 @@
     }
   } 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .searchBar {
-        display: block;
+        /* display: block;
         margin-top: 45px;
         text-align: center;
-        /* align-items: center; */
+        border: 1px solid blue; */
+        /* border: 1px solid blue; */
+        margin-left: 20px;
         
     }
     .search-input {
-        width: 50%;
+        /* width: 50%; */
+    }
+
+    .search-bars-container {
+        /* position:absolute;
+        display: flex;
+        text-align: center; */
+        /* border: 1px solid blue; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        margin-top: 50px;
+        margin-right: 10px;
+        
     }
   } 
