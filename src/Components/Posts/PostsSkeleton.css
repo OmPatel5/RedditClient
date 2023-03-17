@@ -1,5 +1,5 @@
 .posts-skeleton {
-    width: 90%;
+    width: 40%;
     height: 500px;
     display: flex;
 
@@ -35,8 +35,7 @@
 @media screen and (max-width: 1600px) {
     .posts-skeleton {
         /* border: 1px solid rgb(98, 0, 255); */
-        max-width: 60%; /* The width is 100%, when the viewport is 800px or smaller */
-        min-width: 60%;
+        width: 60%; /* The width is 100%, when the viewport is 800px or smaller */
     }
 
     .upvotes-skeleton {
@@ -45,9 +44,9 @@
 
   } 
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1000px) {
     .posts-skeleton {
-        max-width: 80%; /* The width is 100%, when the viewport is 800px or smaller */
+        width: 80%; /* The width is 100%, when the viewport is 800px or smaller */
     }
 
     .upvotes-skeleton {
